@@ -24,11 +24,18 @@
 %   Author:  Victor Martinez Cagigal                                      %
 %   Date:    09/10/2018                                                   %
 %   E-mail:  vicmarcag (at) gmail (dot) com                               %
-%   Version: 1.2                                                          %
-%   Author:  Kane O'Brien                                     %
-%   Date:    2/11/2021                                                   %
-%   Git: OBRKWXYZ                           %
+%								      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ----------------------------------------------------------------------- %
+%   Version: 1.2                                                          %
+%   Author:  Kane O'Brien                                     	      %
+%   Date:    2/11/2021                                                    %
+%   Git: OBRKWXYZ                           			      %
+%   Description: This file was updated to better represent a basic table  %
+%      into a figure in a latex environment.                              %
+% ----------------------------------------------------------------------- %
+
+
 function table2latex(T, filename)
 
     % Error detection and default parameters
@@ -62,7 +69,7 @@ function table2latex(T, filename)
     fprintf(fileID, '\\begin{table}[ht]\\centering\n');
     fprintf(fileID, '\\begin{tabular}{%s}\n\\hline\n', col_spec);
     fprintf(fileID, '%s \\\\ \n', col_names);
-    fprintf(fileID, '\\hline \n');
+    fprintf(fileID, '\\hline\\hline \n');
 
     % Writing the data
     try
