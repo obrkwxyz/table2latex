@@ -25,9 +25,9 @@
 %   Date:    09/10/2018                                                   %
 %   E-mail:  vicmarcag (at) gmail (dot) com                               %
 %   Version: 1.2                                                          %
-%   Author:  Kane O'Brien                                     %
-%   Date:    2/11/2021                                                   %
-%   Git: OBRKWXYZ                           %
+%   Author:  Kane O'Brien                                                 %
+%   Date:    2/11/2021                                                    %
+%   Git: OBRKWXYZ                                                         %
 % ----------------------------------------------------------------------- %
 function table2latex(T, filename)
 
